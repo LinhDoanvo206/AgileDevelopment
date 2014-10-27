@@ -1,9 +1,9 @@
-﻿table {
+﻿.KanbanTable{
     width: 100%;
-    border: 1px;
-    border-color: black;
+    border-collapse: collapse;
 }
 
-.KanbanTable th {
+.KanbanTable th, .KanbanTable td {
+    border: 1px solid black;
     width: 20%;
 }
