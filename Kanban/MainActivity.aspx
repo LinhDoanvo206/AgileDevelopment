@@ -8,8 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <asp:GridView runat="server" ID="KanbanBoardGrid"></asp:GridView>
+        <div id="testDiv" runat="server">
         </div>
     </form>
 </body>

@@ -11,7 +11,18 @@ namespace Kanban
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            try
+            {
+                DatabaseConnection connectionClass = new DatabaseConnection();
 
+                testDiv.InnerText = connectionClass.Connection();
+            }
+
+            catch (Exception exc)
+            {
+
+            }
+            
         }
     }
 }
