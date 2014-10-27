@@ -14,8 +14,7 @@ namespace Kanban
             try
             {
                 DatabaseConnection connectionClass = new DatabaseConnection();
-
-                testDiv.InnerText = connectionClass.Connection();
+                connectionClass.Connection();
             }
 
             catch (Exception exc)

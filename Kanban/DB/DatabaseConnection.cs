@@ -15,7 +15,7 @@ namespace Kanban
         OleDbCommand dbCommand = new OleDbCommand();
         OleDbDataReader dbReader;
 
-        public String Connection() {
+        public void Connection() {
 
             connectionString = "Provider = Microsoft.Jet.OLEDB.4.0;" + "Data Source = " + projectPath;
             DBConnection.ConnectionString = connectionString;
