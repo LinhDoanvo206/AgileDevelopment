@@ -4,12 +4,11 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link rel="stylesheet" type="text/css" src="KanbanStyle.css"/>
     <title></title>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div id="testDiv" runat="server">
-        </div>
     </form>
 </body>
 </html>

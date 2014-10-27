@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
 namespace Kanban
@@ -11,17 +12,36 @@ namespace Kanban
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
+            DatabaseConnection connectionClass = new DatabaseConnection();
+            connectionClass.OpenConnection();
+            connectionClass.CloseConnection();
+
+            String[] tableArray = {"Product Backlog", "Sprint Backlog", "To do", "Work in Progress", "Done"};
+
+            HtmlTable KanbanTable = new HtmlTable();
+            KanbanTable.Attributes.Add("class", "KanbanTable");
+
+            // Start adding content to the table.
+            HtmlTableRow row;
+            HtmlTableCell cell;
+
+            // Create a new row and set its background color.
+            row = new HtmlTableRow();
+            for (int j = 1; j <= 5; j++)
             {
-                DatabaseConnection connectionClass = new DatabaseConnection();
-                connectionClass.Connection();
+                // Create a cell and set its text.
+                cell = new HtmlTableCell("th");
+                cell.InnerHtml = tableArray[j - 1];
+                // Add the cell to the current row.
+                row.Cells.Add(cell);
             }
 
-            catch (Exception exc)
-            {
+            // Add the row to the table.
+            KanbanTable.Rows.Add(row);
 
-            }
-            
+
+            // Add the table to the page.
+            this.Controls.Add(KanbanTable);
         }
     }
 }
