@@ -1,9 +1,28 @@
-﻿.KanbanTable{
+﻿.KanbanTable {
     width: 100%;
     border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
 }
 
-.KanbanTable th, .KanbanTable td {
-    border: 1px solid black;
-    width: 20%;
-}
+    .KanbanTable th {
+        width: 20%;
+        border: 1px solid #ccc;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 3px;
+        padding-right: 3px;
+        background: #f0f0f0;
+        text-align: left;
+    }
+
+    .KanbanTable td {
+        width: 20%;
+        padding-top: 0.5em;
+        padding-bottom: 45%;
+        padding-left: 3px;
+        padding-right: 3px;
+        text-align: left;
+        border: 1px solid #ccc;
+        border-top: none;
+    }

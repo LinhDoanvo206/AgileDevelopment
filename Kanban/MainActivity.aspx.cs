@@ -16,7 +16,7 @@ namespace Kanban
             connectionClass.OpenConnection();
             connectionClass.CloseConnection();
 
-            String[] tableArray = {"Product Backlog", "Sprint Backlog", "To do", "Work in Progress", "Done"};
+            String[] tableArray = { "Product Backlog", "Sprint Backlog", "To do", "Work in Progress", "Done" };
 
             HtmlTable KanbanTable = new HtmlTable();
             KanbanTable.Attributes.Add("class", "KanbanTable");
@@ -25,7 +25,8 @@ namespace Kanban
             HtmlTableRow row;
             HtmlTableCell cell;
 
-            // Create a new row and set its background color.
+            // Create a new HEADER row.
+
             row = new HtmlTableRow();
             for (int j = 1; j <= 5; j++)
             {
@@ -39,6 +40,20 @@ namespace Kanban
             // Add the row to the table.
             KanbanTable.Rows.Add(row);
 
+            // Create a new product row.
+
+            row = new HtmlTableRow();
+
+            for (int j = 1; j <= 5; j++)
+            {
+                // Create a cell and set its text.
+                cell = new HtmlTableCell("td");
+                cell.InnerHtml = "Test";
+                // Add the cell to the current row.
+                row.Cells.Add(cell);
+            }
+
+            KanbanTable.Rows.Add(row);
 
             // Add the table to the page.
             this.Controls.Add(KanbanTable);
