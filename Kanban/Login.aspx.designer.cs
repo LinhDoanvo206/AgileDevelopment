@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Project_UI_Design {
+namespace Kanban {
     
     
     public partial class Login {

@@ -62,7 +62,6 @@
     <Content Include="Login.aspx" />
     <Content Include="LoginSuccess.aspx" />
     <Content Include="MainActivity.aspx" />
-    <Content Include="CSS\UI.css" />
     <Content Include="Signup.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>

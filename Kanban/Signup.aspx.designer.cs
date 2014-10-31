@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Project {
+namespace Kanban {
     
     
-    public partial class WebForm1 {
+    public partial class Signup {
         
         /// <summary>
         /// Head1 control.

@@ -1,21 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Project_UI_Design.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Kanban.Login" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link href="CSS\UI.css" rel="stylesheet" type="text/css" />
-    <style type="text/css">
-        #TextArea1 {
-            height: 101px;
-            width: 276px;
-        }
-
-        #Title1 {
-            width: 232px;
-        }
-    </style>
+    <link href="CSS/KanbanStyle.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
