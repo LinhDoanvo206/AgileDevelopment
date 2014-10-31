@@ -1,18 +1,27 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Kanban.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Sign up.aspx.cs" Inherits="Project_UI_Design.Sign_up" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title></title>
-    <link  href="CSS/KanbanStyle.css" rel="stylesheet" type="text/css"/>
+    <link  href="UI.css" rel="stylesheet" type="text/css"/>
+        <style type="text/css">
+            #TextArea1 {
+                height: 101px;
+                width: 276px;
+            }
+            #Title1 {
+                width: 232px;
+            }
+        </style>
     </head>
     <body>
         <form id="form1" runat="server">
         <div class="divNewT">
         <div class ="divNewT1" >
                 <asp:Button CssClass="btnC"  ID="ButtonClose" runat="server" Text="Close" Height="27px" />
-               <asp:Label ID="lblID" runat="server" Text="Sign Up"></asp:Label>          
+               <asp:Label ID="lblID" runat="server" Text="Log In"></asp:Label>          
            </div>
             <br/>
             <br/>

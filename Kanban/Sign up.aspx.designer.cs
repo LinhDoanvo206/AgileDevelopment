@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Kanban {
+namespace Project_UI_Design {
     
     
-    public partial class MainActivity {
+    public partial class Sign_up {
         
         /// <summary>
         /// Head1 control.

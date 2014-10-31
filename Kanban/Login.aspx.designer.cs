@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Kanban {
+namespace Project_UI_Design {
     
     
     public partial class Login {
@@ -58,49 +58,22 @@ namespace Kanban {
         protected global::System.Web.UI.WebControls.Label lblUN;
         
         /// <summary>
-        /// txtUN control.
+        /// txtUserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUN;
+        protected global::System.Web.UI.WebControls.TextBox txtUserName;
         
         /// <summary>
-        /// lbl_U control.
+        /// lblpwd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_U;
-        
-        /// <summary>
-        /// lblEm control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEm;
-        
-        /// <summary>
-        /// txtEm control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEm;
-        
-        /// <summary>
-        /// lblPWD control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPWD;
+        protected global::System.Web.UI.WebControls.Label lblpwd;
         
         /// <summary>
         /// txtpwd control.
@@ -112,39 +85,21 @@ namespace Kanban {
         protected global::System.Web.UI.WebControls.TextBox txtpwd;
         
         /// <summary>
-        /// lbl_p control.
+        /// btnSignUp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_p;
+        protected global::System.Web.UI.WebControls.Button btnSignUp;
         
         /// <summary>
-        /// lblrp control.
+        /// btnSubmit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblrp;
-        
-        /// <summary>
-        /// txtrp control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtrp;
-        
-        /// <summary>
-        /// btnSbm control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSbm;
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
     }
 }
