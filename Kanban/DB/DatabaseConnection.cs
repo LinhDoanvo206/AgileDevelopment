@@ -72,7 +72,7 @@ namespace Kanban
             }
         }
 
-        public OleDbDataReader getReader()                                                                          // Returns the reader to read from the other method. Use Reader methods to loop through. 
+        public OleDbDataReader getReader()                                                                          // Returns the reader to read from the other method. Use Reader methods to loop through data to retrieve needed info. 
         {
             return DBReader;
         }
