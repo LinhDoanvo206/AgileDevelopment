@@ -57,8 +57,6 @@ namespace Kanban
 
             // Add the table to the page.
             this.Controls.Add(KanbanTable);
-
-            // connectionClass.executeCommand("SELECT * FROM Task");
         }
     }
 }
