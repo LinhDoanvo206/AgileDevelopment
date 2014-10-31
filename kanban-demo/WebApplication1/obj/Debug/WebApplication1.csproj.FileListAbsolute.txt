@@ -1,5 +1,0 @@
-D:\TOTO\Finland\Lahti\Autumn 2014\project\local\kanban-demo\WebApplication1\bin\WebApplication1.dll
-D:\TOTO\Finland\Lahti\Autumn 2014\project\local\kanban-demo\WebApplication1\bin\WebApplication1.pdb
-D:\TOTO\Finland\Lahti\Autumn 2014\project\local\kanban-demo\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
-D:\TOTO\Finland\Lahti\Autumn 2014\project\local\kanban-demo\WebApplication1\obj\Debug\WebApplication1.dll
-D:\TOTO\Finland\Lahti\Autumn 2014\project\local\kanban-demo\WebApplication1\obj\Debug\WebApplication1.pdb
