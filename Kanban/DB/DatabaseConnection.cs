@@ -89,7 +89,7 @@ namespace Kanban
                 System.Diagnostics.Debug.WriteLine(error.ToString());
                 return "ERROR";
             }
-            
+
         }
 
         public OleDbDataReader getReader()                                                                          // Returns the reader to read from the other method. Use Reader methods to loop through data to retrieve needed info. 
