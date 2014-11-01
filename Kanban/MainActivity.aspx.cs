@@ -12,6 +12,10 @@ namespace Kanban
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string username = Session["username"].ToString();
+            Label header = new Label();
+            header.Text = "Congratulation. You have successfully logged in as " + username + ".";
+            form1.Controls.Add(header);
             DatabaseConnection connectionClass = new DatabaseConnection();
             connectionClass.OpenConnection();
             connectionClass.CloseConnection();
