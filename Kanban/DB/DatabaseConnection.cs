@@ -72,6 +72,26 @@ namespace Kanban
             }
         }
 
+        public String executeScalar(String SQLCommand)                                                                 // Returns 1 value as a String
+        {
+            DBCommand.Connection = DBConnection;
+            DBCommand.CommandText = SQLCommand;
+            DBCommand.CommandType = CommandType.Text;
+
+            try
+            {
+                var scalarValue = DBCommand.ExecuteScalar().ToString();
+                return scalarValue;
+            }
+
+            catch (Exception error)
+            {
+                System.Diagnostics.Debug.WriteLine(error.ToString());
+                return "ERROR";
+            }
+            
+        }
+
         public OleDbDataReader getReader()                                                                          // Returns the reader to read from the other method. Use Reader methods to loop through data to retrieve needed info. 
         {
             return DBReader;
