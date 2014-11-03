@@ -72,7 +72,7 @@ namespace Kanban
             }
         }
 
-        public String executeScalar(String SQLCommand)                                                                 // Returns 1 value as a String
+        public String executeScalar(String SQLCommand)                                                             // Returns 1 value as a String
         {
             DBCommand.Connection = DBConnection;
             DBCommand.CommandText = SQLCommand;
