@@ -14,13 +14,25 @@ namespace Kanban
         protected void Page_Load(object sender, EventArgs e)
         {
             Page.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+            DatabaseConnection connectionClass = new DatabaseConnection();
+            connectionClass.OpenConnection();
+            connectionClass.executeQueryCommand("SELECT Login_name,User_ID FROM Login");
+            bool eof;
+            eof = connectionClass.getReader().Read();
+            while (eof)
+            {
+                DropDownListAssignee.Items.Add((connectionClass.getReader())["Login_name"].ToString());
+                DropDownListAssignee.Items[DropDownListAssignee.Items.Count - 1].Value = (connectionClass.getReader())["User_ID"].ToString();
+                eof = (connectionClass.getReader()).Read();
+            }
+            connectionClass.CloseConnection(); 
         }
 
         protected void ButtonAddTask_Click(object sender, EventArgs e)
         {
             DatabaseConnection connectionClass = new DatabaseConnection();
             connectionClass.OpenConnection();
-            connectionClass.executeNonQueryCommand("INSERT INTO Task (Task_Name,Task_Status)" + " VALUES ('" + txtTitle.Text + "','" + DropDownListColumn.SelectedValue + "');");
+            connectionClass.executeNonQueryCommand("INSERT INTO Task (Task_Name,Task_Status,User_ID,Complexity)" + " VALUES ('" + txtTitle.Text + "','" + DropDownListColumn.SelectedValue + "','" + DropDownListAssignee.SelectedValue + "','" + TextBoxComplexity.Text + "');");
             connectionClass.CloseConnection(); 
         }
     }

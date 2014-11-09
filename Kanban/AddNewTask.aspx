@@ -47,16 +47,13 @@
             </asp:DropDownList>
             <br/>
             <br/>
-            <asp:Label ID="Label7" runat="server" Text="Size:"></asp:Label>
+            <asp:Label ID="Label7" runat="server" Text="Complexity:"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label8" runat="server" Text="Assignee:"></asp:Label>
             <br/>
-            <asp:TextBox ID="TextBoxSize" runat="server" Width="94px"></asp:TextBox>
+            <asp:TextBox ID="TextBoxComplexity" runat="server" Width="94px"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:DropDownList ID="DropDownListAssignee" runat="server">
-                <asp:ListItem Text="Linh" Value ="A1"></asp:ListItem>
-                <asp:ListItem Text="yq1012" Value ="A2"></asp:ListItem>
-                <asp:ListItem Text="Long" Value ="A3"></asp:ListItem>   
             </asp:DropDownList>
             <br/>
             <br/>

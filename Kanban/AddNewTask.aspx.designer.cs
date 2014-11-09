@@ -112,13 +112,13 @@ namespace Kanban {
         protected global::System.Web.UI.WebControls.Label Label8;
         
         /// <summary>
-        /// TextBoxSize control.
+        /// TextBoxComplexity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxSize;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxComplexity;
         
         /// <summary>
         /// DropDownListAssignee control.
