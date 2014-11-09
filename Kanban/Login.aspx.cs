@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using System.Data.OleDb;
 using System.Data;
 
-namespace Kanban
+namespace Project_UI_Design
 {
     public partial class Login : System.Web.UI.Page
     {
@@ -18,19 +18,26 @@ namespace Kanban
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            DatabaseConnection connectionClass = new DatabaseConnection();
-            connectionClass.OpenConnection();
-            connectionClass.executeQueryCommand("SELECT Login_name, Password FROM Login WHERE Login_name = '" + txtUserName.Text + "'");
+            String connstr;
+            connstr = "Provider = Microsoft.Jet.OLEDB.4.0;" + @"Data Source = D:\TOTO\Finland\Lahti\Autumn 2014\web application\ProjectDatabase.mdb;";
+            OleDbConnection myConnection = new OleDbConnection();
+            myConnection.ConnectionString = connstr;
+            OleDbCommand myCommand = new OleDbCommand();
+            myCommand.Connection = myConnection;
+            myCommand.CommandText = "SELECT Login_name, Password FROM Login WHERE Login_name = '" + txtUserName.Text + "'";
+            myCommand.CommandType = CommandType.Text;
+            OleDbDataReader myReader;
+            myConnection.Open();
+            myReader = myCommand.ExecuteReader();
             TextBox hiddenTB = new TextBox();
-
-            while (connectionClass.getReader().Read())
+            while (myReader.Read())
             {
-                hiddenTB.Text = (connectionClass.getReader()["Password"].ToString());
+                hiddenTB.Text = (myReader["Password"].ToString());
             }
             if (hiddenTB.Text == txtpwd.Text)
             {
                 Session["username"] = txtUserName.Text;
-                Response.Redirect("MainActivity.aspx");
+                Response.Redirect("LoginSuccess.aspx");
             }
             else
             {
@@ -39,7 +46,7 @@ namespace Kanban
                 labelWrongPass.Text = "You have entered wrong username or password.";
                 Panel1.Controls.Add(labelWrongPass);
             }
-            connectionClass.CloseConnection(); 
+            myConnection.Close();
         }
 
     }

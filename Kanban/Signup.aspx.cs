@@ -7,9 +7,9 @@ using System.Web.UI.WebControls;
 using System.Data.OleDb;
 using System.Data;
 
-namespace Kanban
+namespace Project
 {
-    public partial class Signup : System.Web.UI.Page
+    public partial class WebForm1 : System.Web.UI.Page
     {
        protected void Page_Load(object sender, EventArgs e)
         {
@@ -18,9 +18,16 @@ namespace Kanban
         
        protected void ValidateUN_ServerValidate(object source, ServerValidateEventArgs args)
        {
-           DatabaseConnection connectionClass = new DatabaseConnection();
-           connectionClass.OpenConnection();
-           int count = Convert.ToInt16(connectionClass.executeScalar("SELECT count(*) FROM Login WHERE Login_name = '" + txtUN.Text + "'"));
+           String connstr;
+           connstr = "Provider = Microsoft.Jet.OLEDB.4.0;" + @"Data Source = C:\Users\Nguyen Minh Son\Documents\Visual Studio 2013\Projects\Project\ProjectDatabase.mdb;";
+           OleDbConnection myConnection = new OleDbConnection();
+           myConnection.ConnectionString = connstr;
+           OleDbCommand myCommand = new OleDbCommand();
+           myCommand.Connection = myConnection;
+           myCommand.CommandText = "SELECT count(*) FROM Login WHERE Login_name = '" + txtUN.Text + "'";
+           myCommand.CommandType = CommandType.Text;
+           myConnection.Open();
+           int count = Convert.ToInt16(myCommand.ExecuteScalar());
            if (count == 0)
            {
                args.IsValid = true;
@@ -28,7 +35,7 @@ namespace Kanban
 
            else
                args.IsValid = false;
-           connectionClass.CloseConnection(); 
+           myConnection.Close();
        }
 
        protected void ValidatePW_ServerValidate(object source, ServerValidateEventArgs args)
@@ -46,12 +53,19 @@ namespace Kanban
 
        protected void btnSubmit_Click1(object sender, EventArgs e)
        {
-           DatabaseConnection connectionClass = new DatabaseConnection();
-           connectionClass.OpenConnection();
-           connectionClass.executeNonQueryCommand("INSERT INTO Login (Login_name,[Password])" + " VALUES ('" + txtUN.Text + "','" + txtpwd.Text + "');");
-           connectionClass.CloseConnection(); 
+           String connstr;
+           connstr = "Provider = Microsoft.Jet.OLEDB.4.0;" + @"Data Source = C:\Users\Nguyen Minh Son\Documents\Visual Studio 2013\Projects\Project\ProjectDatabase.mdb;";
+           OleDbConnection myConnection = new OleDbConnection();
+           myConnection.ConnectionString = connstr;
+           OleDbCommand myCommand = new OleDbCommand();
+           myCommand.Connection = myConnection;
+           myCommand.CommandType = CommandType.Text;
+           myCommand.CommandText = "INSERT INTO Login (Login_name,[Password])" + " VALUES ('" + txtUN.Text + "','" + txtpwd.Text + "');";
+           myConnection.Open();
+           myCommand.ExecuteNonQuery();
+           myConnection.Close();
            if (this.IsValid)
-               Response.Redirect("Login.aspx");
+               Response.Redirect("WebForm2.aspx");
        }
     }
 }
