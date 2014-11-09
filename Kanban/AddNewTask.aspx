@@ -67,7 +67,7 @@
             <asp:TextBox ID="TextBoxDeadline" runat="server" Width="98px"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:DropDownList ID="DropDownListColumn" runat="server">
-                <asp:ListItem Text="Backlog" Value ="B1"></asp:ListItem>
+                <asp:ListItem Text="Backlog" Value ="1"></asp:ListItem>
                 <asp:ListItem Text="Sprint" Value ="2"></asp:ListItem>
                 <asp:ListItem Text="To do" Value ="3"></asp:ListItem>
                 <asp:ListItem Text="Doing" Value ="4"></asp:ListItem>
@@ -82,17 +82,18 @@
         <div class ="divNewT3" >
             <asp:Label ID="Label2" runat="server" Text="Title"></asp:Label>
             <br/>
-            <input id="Title1" type="text" />
+            <asp:TextBox runat="server" ID="txtTitle" Width="259px"></asp:TextBox><br />
+            <asp:RequiredFieldValidator runat="server" ID="ValidateTitle" ControlToValidate="txtTitle" ErrorMessage="Please insert task title!" Display="Dynamic"></asp:RequiredFieldValidator>
             <br/>
             <br/>
             <asp:Label ID="Label3" runat="server" Text="Description"></asp:Label>
             <br/>
-            <textarea id="TextArea1"></textarea>
+            <asp:TextBox runat="server" ID="txtDescription" TextMode="MultiLine" Height="97px" Width="263px"></asp:TextBox>
         </div>
 
         <br/>
         
-        <asp:Button CssClass ="NewTAdd"  ID="ButtonAddTask" runat="server" Text="Add" Height="44px" Width="103px" />
+        <asp:Button CssClass ="NewTAdd"  ID="ButtonAddTask" runat="server" Text="Add Task" Height="34px" Width="103px" OnClick="ButtonAddTask_Click" />
         
       </div>
     </form>

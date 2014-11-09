@@ -61,7 +61,6 @@
     <Content Include="App_Data\ProjectDatabase.mdb" />
     <Content Include="CSS\KanbanStyle.css" />
     <Content Include="Login.aspx" />
-    <Content Include="LoginSuccess.aspx" />
     <Content Include="MainActivity.aspx" />
     <Content Include="Signup.aspx" />
     <Content Include="Web.config" />
@@ -81,13 +80,6 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="LoginSuccess.aspx.cs">
-      <DependentUpon>LoginSuccess.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LoginSuccess.aspx.designer.cs">
-      <DependentUpon>LoginSuccess.aspx</DependentUpon>
     </Compile>
     <Compile Include="MainActivity.aspx.cs">
       <DependentUpon>MainActivity.aspx</DependentUpon>
