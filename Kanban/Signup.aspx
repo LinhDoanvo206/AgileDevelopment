@@ -13,7 +13,7 @@
         <div class="divNewT">
             <div class="divNewT1">
                 <asp:Button CssClass="btnC" ID="ButtonClose" runat="server" Text="Close" Height="27px" />
-                <asp:Label ID="lblID" runat="server" Text="Log In"></asp:Label>
+                <asp:Label ID="lblID" runat="server" Text="Sign up"></asp:Label>
             </div>
             <br />
             <br />

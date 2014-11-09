@@ -31,11 +31,10 @@
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please enter your password" Style="margin-left: 30px" ControlToValidate="txtpwd" ForeColor="Red"></asp:RequiredFieldValidator>
                 <br />
                 <br />
-                <asp:Button ID="btnSignUp" runat="server" Text="Sign Up" />
                 <asp:Panel ID="Panel1" runat="server" Width="500px">
                 </asp:Panel>
             </div>
-            <asp:Button CssClass="NewTAdd" ID="btnSubmit" runat="server" Text="Submit" Height="42px" Width="86px" OnClick="btnSubmit_Click" />
+            <asp:Button CssClass="NewTAdd" ID="btnSubmit" runat="server" Text="Log In" Height="42px" Width="86px" OnClick="btnSubmit_Click" />
         </div>
     </form>
 </body>
