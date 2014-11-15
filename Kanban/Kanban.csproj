@@ -63,7 +63,6 @@
     <Content Include="CSS\KanbanStyle.css" />
     <Content Include="Login.aspx" />
     <Content Include="MainActivity.aspx" />
-    <Content Include="MainActivity2.aspx" />
     <Content Include="Signup.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -96,12 +95,6 @@
     </Compile>
     <Compile Include="MainActivity.aspx.designer.cs">
       <DependentUpon>MainActivity.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="MainActivity2.aspx.cs">
-      <DependentUpon>MainActivity2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="MainActivity2.aspx.designer.cs">
-      <DependentUpon>MainActivity2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Signup.aspx.cs">
