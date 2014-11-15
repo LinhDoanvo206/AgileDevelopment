@@ -67,15 +67,6 @@ namespace Kanban {
         protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
-        /// Label6 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label6;
-        
-        /// <summary>
         /// DropDownListColor control.
         /// </summary>
         /// <remarks>
@@ -83,15 +74,6 @@ namespace Kanban {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DropDownListColor;
-        
-        /// <summary>
-        /// DropDownListPriority control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownListPriority;
         
         /// <summary>
         /// Label7 control.
