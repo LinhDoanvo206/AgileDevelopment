@@ -32,8 +32,9 @@ namespace Kanban
         {
             DatabaseConnection connectionClass = new DatabaseConnection();
             connectionClass.OpenConnection();
-            connectionClass.executeNonQueryCommand("INSERT INTO Task (Task_Name,Task_Status,User_ID,Complexity)" + " VALUES ('" + txtTitle.Text + "','" + DropDownListColumn.SelectedValue + "','" + DropDownListAssignee.SelectedValue + "','" + TextBoxComplexity.Text + "');");
-            connectionClass.CloseConnection(); 
+            connectionClass.executeNonQueryCommand("INSERT INTO Task (Project_ID,Task_Name,Task_Status,User_ID,Complexity)" + " VALUES (1,'" + txtTitle.Text + "','" + DropDownListColumn.SelectedValue + "','" + DropDownListAssignee.SelectedValue + "','" + TextBoxComplexity.Text + "');");
+            connectionClass.CloseConnection();
+            Response.Redirect("MainActivity2.aspx");
         }
     }
 }

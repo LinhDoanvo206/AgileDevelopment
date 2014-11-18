@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="AddNewTask.aspx" />
     <Content Include="App_Data\ProjectDatabase.mdb" />
+    <Content Include="Comment.aspx" />
     <Content Include="CSS\KanbanStyle.css" />
     <Content Include="Login.aspx" />
     <Content Include="MainActivity.aspx" />
@@ -72,6 +73,13 @@
     </Compile>
     <Compile Include="AddNewTask.aspx.designer.cs">
       <DependentUpon>AddNewTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment.aspx.cs">
+      <DependentUpon>Comment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment.aspx.designer.cs">
+      <DependentUpon>Comment.aspx</DependentUpon>
     </Compile>
     <Compile Include="DB\DatabaseConnection.cs" />
     <Compile Include="Login.aspx.cs">

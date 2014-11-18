@@ -30,7 +30,7 @@ namespace Kanban
             if (hiddenTB.Text == txtpwd.Text)
             {
                 Session["username"] = txtUserName.Text;
-                Response.Redirect("MainActivity.aspx");
+                Response.Redirect("MainActivity2.aspx");
             }
             else
             {
