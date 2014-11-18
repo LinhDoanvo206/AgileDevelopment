@@ -98,6 +98,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\kanbanG3 - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\kanbanG3 - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\KanbanG3.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
