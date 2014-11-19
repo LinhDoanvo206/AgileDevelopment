@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MainActivity.aspx.cs" Inherits="Kanban.MainActivity2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MainActivity2.aspx.cs" Inherits="Kanban.MainActivity2" %>
 
 <!DOCTYPE html>
 
@@ -32,12 +32,13 @@
             // End of Ajax
             $(".sortable").disableSelection();
         });
-    </script>
+  </script>
 </head>
 <body>
     <form id="form1" runat="server">
-        <table style="width: 100%">
+        <table style="width:100%">
             <tr>
+<<<<<<< HEAD
                 <th>
                     <div class="table_header">
                         <asp:Button runat="server" ID="btnAddtask1" Text="+" CssClass="btnadd" PostBackUrl="~/AddNewTask.aspx" />Product Backlog
@@ -63,6 +64,13 @@
                         <asp:Button runat="server" ID="btnAddtask5" Text="+" CssClass="btnadd" PostBackUrl="~/AddNewTask.aspx" />Done
                     </div>
                 </th>
+=======
+                <th><div class="table_header"><asp:Button runat="server" ID="btnAddtask1" Text="+" CssClass="btnadd" PostBackUrl="~/AddNewTask.aspx"/>Product Backlog</div></th>
+                <th><div class="table_header"><asp:Button runat="server" ID="btnAddtask2" Text="+" CssClass="btnadd" PostBackUrl="~/AddNewTask.aspx"/>Sprint Backlog</div></th>
+                <th><div class="table_header"><asp:Button runat="server" ID="btnAddtask3" Text="+" CssClass="btnadd" PostBackUrl="~/AddNewTask.aspx"/>To Do</div></th>
+                <th><div class="table_header"><asp:Button runat="server" ID="btnAddtask4" Text="+" CssClass="btnadd" PostBackUrl="~/AddNewTask.aspx"/>Work in Progress</div></th>
+                <th><div class="table_header"><asp:Button runat="server" ID="btnAddtask5" Text="+" CssClass="btnadd" PostBackUrl="~/AddNewTask.aspx"/>Done</div></th>
+>>>>>>> parent of 4f087f3... Beautify the code.
             </tr>
             <tr>
                 <td>
@@ -72,8 +80,7 @@
 
 
 
-                    </div>
-                </td>
+                    </div></td>
                 <td>
                     <div id="div2">
                         <asp:Panel ID="Panel2" runat="server">
@@ -100,11 +107,11 @@
                 </td>
             </tr>
         </table>
-
-
-
-
-
+        
+        
+        
+        
+        
     </form>
 </body>
 </html>
