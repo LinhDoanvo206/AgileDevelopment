@@ -13,10 +13,10 @@ namespace Kanban
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-         //   string username = Session["username"].ToString();
-         //   Label header = new Label();
-         //   header.Text = "Congratulation. You have successfully logged in as " + username + ".";
-         //   form1.Controls.Add(header);
+            //   string username = Session["username"].ToString();
+            //   Label header = new Label();
+            //   header.Text = "Congratulation. You have successfully logged in as " + username + ".";
+            //   form1.Controls.Add(header);
             DatabaseConnection connectionClass = new DatabaseConnection();
             connectionClass.OpenConnection();
             connectionClass.executeQueryCommand("SELECT * FROM Task WHERE Project_ID = 1");
@@ -86,7 +86,7 @@ namespace Kanban
             Panel3.Controls.Add(new LiteralControl("</div>"));
             Panel4.Controls.Add(new LiteralControl("</div>"));
             Panel5.Controls.Add(new LiteralControl("</div>"));
-            connectionClass.CloseConnection(); 
+            connectionClass.CloseConnection();
         }
     }
 }
