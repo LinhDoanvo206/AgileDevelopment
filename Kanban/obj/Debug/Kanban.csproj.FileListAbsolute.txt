@@ -1,6 +1,0 @@
-D:\Git\AgileDevelopment\Kanban\bin\Kanban.dll
-D:\Git\AgileDevelopment\Kanban\bin\Kanban.pdb
-D:\Git\AgileDevelopment\Kanban\obj\Debug\Kanban.csprojResolveAssemblyReference.cache
-D:\Git\AgileDevelopment\Kanban\obj\Debug\Kanban.dll
-D:\Git\AgileDevelopment\Kanban\obj\Debug\Kanban.pdb
-D:\Git\AgileDevelopment\Kanban\bin\Kanban.dll.config
