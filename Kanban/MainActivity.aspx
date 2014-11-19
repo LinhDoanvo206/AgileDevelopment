@@ -40,23 +40,28 @@
             <tr>
                 <th>
                     <div class="table_header">
-                        <asp:Button runat="server" ID="btnAddtask1" Text="+" CssClass="btnadd" PostBackUrl="~/AddNewTask.aspx" />Product Backlog</div>
+                        <asp:Button runat="server" ID="btnAddtask1" Text="+" CssClass="btnadd" PostBackUrl="~/AddNewTask.aspx" />Product Backlog
+                    </div>
                 </th>
                 <th>
                     <div class="table_header">
-                        <asp:Button runat="server" ID="btnAddtask2" Text="+" CssClass="btnadd" PostBackUrl="~/AddNewTask.aspx" />Sprint Backlog</div>
+                        <asp:Button runat="server" ID="btnAddtask2" Text="+" CssClass="btnadd" PostBackUrl="~/AddNewTask.aspx" />Sprint Backlog
+                    </div>
                 </th>
                 <th>
                     <div class="table_header">
-                        <asp:Button runat="server" ID="btnAddtask3" Text="+" CssClass="btnadd" PostBackUrl="~/AddNewTask.aspx" />To Do</div>
+                        <asp:Button runat="server" ID="btnAddtask3" Text="+" CssClass="btnadd" PostBackUrl="~/AddNewTask.aspx" />To Do
+                    </div>
                 </th>
                 <th>
                     <div class="table_header">
-                        <asp:Button runat="server" ID="btnAddtask4" Text="+" CssClass="btnadd" PostBackUrl="~/AddNewTask.aspx" />Work in Progress</div>
+                        <asp:Button runat="server" ID="btnAddtask4" Text="+" CssClass="btnadd" PostBackUrl="~/AddNewTask.aspx" />Work in Progress
+                    </div>
                 </th>
                 <th>
                     <div class="table_header">
-                        <asp:Button runat="server" ID="btnAddtask5" Text="+" CssClass="btnadd" PostBackUrl="~/AddNewTask.aspx" />Done</div>
+                        <asp:Button runat="server" ID="btnAddtask5" Text="+" CssClass="btnadd" PostBackUrl="~/AddNewTask.aspx" />Done
+                    </div>
                 </th>
             </tr>
             <tr>
