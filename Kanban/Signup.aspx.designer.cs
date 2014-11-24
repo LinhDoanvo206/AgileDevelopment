@@ -31,22 +31,22 @@ namespace Kanban {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// ButtonClose control.
+        /// table2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonClose;
+        protected global::System.Web.UI.WebControls.Table table2;
         
         /// <summary>
-        /// lblID control.
+        /// tablerow1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblID;
+        protected global::System.Web.UI.WebControls.TableRow tablerow1;
         
         /// <summary>
         /// lblUN control.
@@ -85,6 +85,15 @@ namespace Kanban {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidateUsername;
         
         /// <summary>
+        /// tablerow2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TableRow tablerow2;
+        
+        /// <summary>
         /// lblEm control.
         /// </summary>
         /// <remarks>
@@ -119,6 +128,15 @@ namespace Kanban {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
+        
+        /// <summary>
+        /// tablerow3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TableRow tablerow3;
         
         /// <summary>
         /// lblPWD control.
@@ -166,6 +184,15 @@ namespace Kanban {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidatePassword;
         
         /// <summary>
+        /// tablerow4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TableRow tablerow4;
+        
+        /// <summary>
         /// lblrp control.
         /// </summary>
         /// <remarks>
@@ -200,6 +227,15 @@ namespace Kanban {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidateRepeatPasswprd;
+        
+        /// <summary>
+        /// tablerow5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TableRow tablerow5;
         
         /// <summary>
         /// btnSubmit control.

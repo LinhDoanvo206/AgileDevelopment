@@ -8,82 +8,117 @@
      <link  href="CSS/KanbanStyle.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
 </head>
-<body>
-    <form id="form1" runat="server">
-    <div class ="divNewT" >
+<body >
 
-       <div class ="divNewT1" >
-            <asp:Button CssClass="btnC"  ID="Button1" runat="server" Text="Close" Height="27px" />
-           <asp:Label ID="Label1" runat="server" Text="Task Details"></asp:Label>
-          
-       </div>
+    <div id="header">
+		<div class="wrapper1">
+			<h1>Add New Task</h1>
+		</div>
+	</div>
 
-        <br/>
-        <br/>
-
-        <div class="divNewT2">
+    <div id="container" class="internal" >
+	
+		<div id="top">
+			
+			<h2>Task details</h2>
+						
+		</div>
+    
+    	<div id="content">
+			<div class="wrapper">
+      <form id="form1" runat="server">
+                 
+        <div class ="divNewT2" >
             <asp:Label CssClass ="lblTF"  ID="Label4" runat="server" Text="Task fields"></asp:Label>
          
             <br/>
             <br/>
-            <asp:Label ID="Label5" runat="server" Text="Color:"></asp:Label>
 
-            
+            <asp:Table id="table3"  style="margin-left: auto; margin-right: auto;" runat="server">
+
+                <asp:TableRow ID="tablerow1" runat="server">
+              <asp:TableCell>
+            <asp:Label ID="Label5" runat="server" Text="Color:"></asp:Label>
             <br/>
-            <asp:DropDownList ID="DropDownListColor" runat="server" Height="16px" Width="64px">
+            <asp:DropDownList ID="DropDownListColor" runat="server"  CssClass="droplist">
                 <asp:ListItem Text="red" Value ="1"></asp:ListItem>
                 <asp:ListItem Text="Blue" Value ="2"></asp:ListItem>
                 <asp:ListItem Text="Green" Value ="3"></asp:ListItem>
                 <asp:ListItem Text="Yellow" Value ="4"></asp:ListItem>
                 <asp:ListItem Text="Pink" Value ="5"></asp:ListItem>
             </asp:DropDownList>
-            <br/>
-            <br/>
+
+                   </asp:TableCell>                                
+           </asp:TableRow> 
+
+            <asp:TableRow ID="tablerow2" runat="server">
+              <asp:TableCell>
             <asp:Label ID="Label7" runat="server" Text="Complexity:"></asp:Label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <br/>
+            <asp:TextBox ID="TextBoxComplexity" runat="server" Width="94px" CssClass="inputtext"></asp:TextBox>
+                    </asp:TableCell>
+                <asp:TableCell> &nbsp;</asp:TableCell>
+                <asp:TableCell>
             <asp:Label ID="Label8" runat="server" Text="Assignee:"></asp:Label>
             <br/>
-            <asp:TextBox ID="TextBoxComplexity" runat="server" Width="94px" CssClass="marginright50"></asp:TextBox>
-            <asp:DropDownList ID="DropDownListAssignee" runat="server">
+            <asp:DropDownList ID="DropDownListAssignee" runat="server" CssClass="droplist">
             </asp:DropDownList>
-            <br/>
-            <br/>
+                  </asp:TableCell>                                
+           </asp:TableRow> 
+
+
+            <asp:TableRow ID="tablerow3" runat="server">
+              <asp:TableCell>
             <asp:Label ID="Label9" runat="server" Text="Estimation Hours:"></asp:Label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="Label10" runat="server" Text="Column"></asp:Label>
-            :<br/>
-            <asp:TextBox ID="TextBoxDeadline" runat="server" Width="98px" CssClass="marginright50"></asp:TextBox>
-            <asp:DropDownList ID="DropDownListColumn" runat="server">
+                  <br/>
+          <asp:TextBox ID="TextBoxDeadline" runat="server" Width="98px" CssClass="inputtext"></asp:TextBox>
+                  </asp:TableCell>
+                <asp:TableCell> &nbsp;</asp:TableCell>
+                <asp:TableCell>
+            <asp:Label ID="Label10" runat="server" Text="Column:"></asp:Label>
+            <br/>
+            
+            <asp:DropDownList ID="DropDownListColumn" runat="server" CssClass="droplist">
                 <asp:ListItem Text="Backlog" Value ="1"></asp:ListItem>
                 <asp:ListItem Text="Sprint" Value ="2"></asp:ListItem>
                 <asp:ListItem Text="To do" Value ="3"></asp:ListItem>
                 <asp:ListItem Text="Doing" Value ="4"></asp:ListItem>
                 <asp:ListItem Text="Done" Value ="5"></asp:ListItem>
             </asp:DropDownList>
+               </asp:TableCell>
+                 </asp:TableRow>
+                </asp:Table>
             <br/>
             <br/>
+
         </div>
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+       
         <div class ="divNewT3" >
             <asp:Label ID="Label2" runat="server" Text="Title"></asp:Label>
             <br/>
-            <asp:TextBox runat="server" ID="txtTitle" Width="259px"></asp:TextBox><br />
-            <asp:RequiredFieldValidator runat="server" ID="ValidateTitle" ControlToValidate="txtTitle" ErrorMessage="Please insert task title!" Display="Dynamic"></asp:RequiredFieldValidator>
+            <asp:TextBox runat="server" ID="txtTitle"  CssClass="inputtext"></asp:TextBox><br />
+            <asp:RequiredFieldValidator runat="server" ID="ValidateTitle" ControlToValidate="txtTitle" ErrorMessage="Please insert task title!" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
             <br/>
             <br/>
             <asp:Label ID="Label3" runat="server" Text="Description"></asp:Label>
             <br/>
-            <asp:TextBox runat="server" ID="txtDescription" TextMode="MultiLine" Height="97px" Width="263px"></asp:TextBox>
+            <asp:TextBox runat="server" ID="txtDescription" TextMode="MultiLine" Height="97px" Width="263px" CssClass="inputtext1"></asp:TextBox>
+             <br/><br/>
+            <asp:Button CssClass ="public-button" style="text-align :center  ;"  ID="ButtonAddTask" runat="server" Text="Add Task"  OnClick="ButtonAddTask_Click"/>
         </div>
 
-        <br/>
+        <br/><br/>
+          <br />
         
-        <asp:Button CssClass ="NewTAdd"  ID="ButtonAddTask" runat="server" Text="Add Task" Height="34px" Width="103px" OnClick="ButtonAddTask_Click"/>
         
-      </div>
-    </form>
+        
+      </form>
+    
+     </div>        
+       </div>           
+              </div>    
+         
 </body>
 </html>
 
