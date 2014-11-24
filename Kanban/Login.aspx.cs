@@ -37,7 +37,7 @@ namespace Kanban
                 Label labelWrongPass = new Label();
                 labelWrongPass.ForeColor = System.Drawing.Color.Red;
                 labelWrongPass.Text = "You have entered wrong username or password.";
-                Panel1.Controls.Add(labelWrongPass);
+                lblErr.Controls.Add(labelWrongPass);
             }
             connectionClass.CloseConnection(); 
         }
